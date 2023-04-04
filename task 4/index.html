@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFT Marketplace</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header start -->
+    <header>
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="header-left">
+            <div class="logo">
+              <a href="#"><img src="image/logo-dark.png" width="142" alt=""></a>
+            </div>
+            <ul class="nav-link">
+              <li class="nav-item active">
+                <a href="#">Home</a>                
+              </li>
+              <li class="nav-item">
+                <a href="#">Catalog</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Account</a>
+              </li>
+              <li class="nav-item">
+                <a href="#">Back to main demo</a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-right">
+            <div class="header-right-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="search-icon" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
+            </div>
+            <div class="header-right-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="user-icon" viewBox="0 0 16 16">
+              <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+              </svg>
+            </div>
+            <a href="#" class="button button-accent">Connect Wallet</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- hero section start -->
+    <section class="hero-section-bg" style="background-image: url(image/hero-bg.png);">
+      <div class="hero-section">
+        <div class="container">
+          <div class="hero-content-wrapper">
+            <div class="hero-content">
+              <div class="hero-head">
+                <h2 class="hero-title">Discover rare digital art and collect NFTs</h2>
+              </div>
+              <div>
+                <p class="hero-description">The world's first and largest digital marketplace for crypto collectibles and non-fungible tokens (NFTs).</p>
+              </div>
+              <div class="hero-cta">
+                <a href="#" class="button button-primary">Explore marketplace</a>
+                <a href="#" class="button button-secondary">Create your NFT</a>
+              </div>
+            </div>
+            <div class="hero-slider">
+              <img src="image/hero-image.jpg" alt="" class="hero-slider-image">
+              <div class="bid-container">
+                <div class="bid-col-1">
+                  <div>
+                    <h6 class="bid-title">Current bid:</h6>
+                  </div>
+                  <div >
+                    <p class="bid-desc">0.5 ETH</p>
+                  </div>
+                </div>
+                <div class="bid-col-2">
+                  <div>
+                    <h6 class="bid-title">Ends in:</h6>
+                  </div>
+                  <div>
+                    <p class="bid-desc">18 hours</p>
+                  </div>
+                </div>
+                <div class="bid-col-3">
+                  <a href="#" class="button bid-cta">Start bid</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- hero section end -->
+
+  <!-- recent post section strat  -->
+  <section class="recent-post-card-section">
+    <div class="container">
+      <div class="recent-post-card-section-head">
+        <h2 class="head recent-post-card-section-title">Recent Drops</h2>
+        <a href="#" class="button button-outline">Explore more <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></a>
+      </div>
+      <div class="recent-post-card-wrapper">
+        <div class="recent-post-card">
+          <div class="recent-post-card-image">
+            <a href=""><img src="image/card-image-1.jpg" alt=""></a>
+          </div>
+          <div class="recent-post-card-body">
+            <h3 class="title recent-post-card-title">3d aesthetics with shapes</h3>
+            <span class="text-muted center">Current bid:</span>
+            <div class="recent-post-card-center">
+              <h3 class="text-darker">0.156 ETH</h3>
+              <span class="text-muted bottom">(≈ $ 595.76)</span>
+            </div>
+          </div>
+          <div class="recent-post-card-footer">
+            <div class="recent-post-card-footer-wrapper">
+              <img class="profile-icon" src="image/foxnet_creator.png" alt="">
+              <a href="#" class="profile-name">@foxnet_creator</a>
+            </div>
+          </div>
+        </div>
+        <div class="recent-post-card">
+          <div class="recent-post-card-image">
+            <a href=""><img src="image/card-image-2.jpg" alt=""></a>
+          </div>
+          <div class="recent-post-card-body">
+            <h3 class="title recent-post-card-title">Ocean and sky</h3>
+            <span class="text-muted center">Current bid:</span>
+            <div class="recent-post-card-center">
+              <h3 class="text-darker">0.5 ETH</h3>
+              <span class="text-muted bottom">(≈ $ 2,000.55)</span>
+            </div>
+          </div>
+          <div class="recent-post-card-footer">
+            <div class="recent-post-card-footer-wrapper">
+              <img class="profile-icon" src="image/YunusKullebi.png" alt="">
+              <a href="#" class="profile-name">@YunusKullebi</a>
+            </div>
+          </div>
+        </div>
+        <div class="recent-post-card">
+          <div class="recent-post-card-image">
+            <a href=""><img src="image/card-image-3.jpg" alt=""></a>
+          </div>
+          <div class="recent-post-card-body">
+            <h3 class="title recent-post-card-title">Aesthetic art collage</h3>
+            <span class="text-muted center">Current bid:</span>
+            <div class="recent-post-card-center">
+              <h3 class="text-darker">0.6 ETH</h3>
+              <span class="text-muted bottom">(≈ $ 2,400.65)</span>
+            </div>
+          </div>
+          <div class="recent-post-card-footer">
+            <div class="recent-post-card-footer-wrapper">
+              <img class="profile-icon" src="image/lulucollages.png" alt="">
+              <a href="#" class="profile-name">@lulucollages</a>
+            </div>
+          </div>
+        </div>
+        <div class="recent-post-card">
+          <div class="recent-post-card-image">
+            <a href=""><img src="image/card-image-4.jpg" alt=""></a>
+          </div>
+          <div class="recent-post-card-body">
+            <h3 class="title recent-post-card-title">Astronaut surrounded by lights</h3>
+            <span class="text-muted center">Current bid:</span>
+            <div class="recent-post-card-center">
+              <h3 class="text-darker">0.1 ETH</h3>
+              <span class="text-muted bottom">(≈ $ 400.19)</span>
+            </div>
+          </div>
+          <div class="recent-post-card-footer">
+            <div class="recent-post-card-footer-wrapper">
+              <img class="profile-icon" src="image/DistroKid.png" alt="">
+              <a href="#" class="profile-name">@DistroKid</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- recent post section end  -->
+
+  <!-- trending post section start -->
+  <section class="trending-post-card-section">
+    <div class="container">
+      <div class="trending-post-card-section-head">
+        <h2 class="head trending-post-card-section-title">Trending in </h2>
+        <a href="#" class="toggle-label">All categories <svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="toggle-label-svg" viewBox="0 0 16 16">
+        <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/></svg>
+        </a>        
+      </div>
+      <div class="trending-post-card-wrapper">
+        <div class="trending-post-card">
+          <div class="trending-post-card-image">
+            <a href=""><img src="image/card-image-5.jpg" alt=""></a>
+          </div>
+          <div class="trending-post-card-body">
+            <h3 class="title trending-post-card-title">Aesthetic art collage</h3>
+            <span class="text-muted center">Reserve price:</span>
+            <div class="trending-post-card-center">
+              <h3 class="text-darker">0.6 ETH</h3>
+              <span class="text-muted bottom">(≈ $ 2,400.65)</span>
+            </div>
+          </div>
+          <div class="trending-post-card-footer">
+            <div class="trending-post-card-footer-wrapper">
+              <img class="profile-icon" src="image/Sharan_Pagadala.png" alt="">
+              <a href="#" class="profile-name">@Sharan_Pagadala</a>
+            </div>
+          </div>
+        </div>
+        <div class="trending-post-card">
+          <div class="trending-post-card-image">
+            <a href=""><img src="image/card-image-6.jpg" alt=""></a>
+          </div>
+          <div class="trending-post-card-body">
+            <h3 class="title trending-post-card-title">Ocean and sky</h3>
+            <span class="text-muted center">Current bid:</span>
+            <div class="trending-post-card-center">
+              <h3 class="text-darker">0.5 ETH</h3>
+              <span class="text-muted bottom">(≈ $ 2,000.55)</span>
+            </div>
+          </div>
+          <div class="trending-post-card-footer">
+            <div class="trending-post-card-footer-wrapper">
+              <img class="profile-icon" src="image/Simonlee.png" alt="">
+              <a href="#" class="profile-name">@Simonlee</a>
+            </div>
+          </div>
+        </div>
+        <div class="trending-post-card">
+          <div class="trending-post-card-image">
+            <a href=""><img src="image/card-image-7.jpg" alt=""></a>
+          </div>
+          <div class="trending-post-card-body">
+            <h3 class="title trending-post-card-title">3d aesthetics with shapes</h3>
+            <span class="text-muted center">Current bid:</span>
+            <div class="trending-post-card-center">
+              <h3 class="text-darker">0.156 ETH</h3>
+              <span class="text-muted bottom">(≈ $ 595.76)</span>
+            </div>
+          </div>
+          <div class="trending-post-card-footer">
+            <div class="trending-post-card-footer-wrapper">
+              <img class="profile-icon" src="image/Shubham_Dhage.png" alt="">
+              <a href="#" class="profile-name">@Shubham_Dhage</a>
+            </div>
+          </div>
+        </div>
+        <div class="trending-post-card">
+          <div class="trending-post-card-image">
+            <a href=""><img src="image/card-image-8.jpg" alt=""></a>
+          </div>
+          <div class="trending-post-card-body">
+            <h3 class="title trending-post-card-title">Astronaut surrounded by lights</h3>
+            <span class="text-muted center">Reserve price:</span>
+            <div class="trending-post-card-center">
+              <h3 class="text-darker">0.1 ETH</h3>
+              <span class="text-muted bottom">(≈ $ 400.19)</span>
+            </div>
+          </div>
+          <div class="trending-post-card-footer">
+            <div class="trending-post-card-footer-wrapper">
+              <img class="profile-icon" src="image/DistroKid-1.png" alt="">
+              <a href="#" class="profile-name">@DistroKid</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="trending-post-card-section-bottom">
+        <a href="#" class="button button-outline">Browse marketplace</a>
+      </div>
+    </div>
+  </section>
+  <!-- trending post section end -->
+
+  <!-- creator card start -->
+  <section class="creator-card-section">
+    <div class="container">
+      <div class="creator-card-section-head">
+        <h2 class="head creator-card-section-title">Top Creators</h2>
+      </div>
+      <div class="creator-card-wrapper">
+        <div class="creator-card">
+          <div class="creator-info-wrapper">
+            <div class="creator-profile-info">
+              <p class="index">1.</p>           
+              <div class="profile-image">
+                <img src="image/creator-1.png" alt="">
+              </div>
+              <div class="creator-reach">
+                <div>
+                  <h4><a href="#" class="creator-name">@freeross</a>
+                </div></h4>
+                <div>
+                  <p class="text-muted creator-followers">569 followers</p>
+                </div>
+              </div>
+            </div>
+            <div class="profile-cta-wrapper">
+              <button class="button profile-cta">Follow</button>
+            </div>
+          </div>
+          <hr class="divider">
+          <div class="creator-info-wrapper">
+            <div class="creator-profile-info">
+              <p class="index">2.</p>           
+              <div class="profile-image">
+                <img src="image/creator-2.png" alt="">
+              </div>
+              <div class="creator-reach">
+                <div>
+                  <h4><a href="#" class="creator-name">@Sharan_Pagadala</a>
+                </div></h4>
+                <div>
+                  <p class="text-muted creator-followers">84 followers</p>
+                </div>
+              </div>
+            </div>
+            <div class="profile-cta-wrapper">
+              <button class="button profile-cta">Follow</button>
+            </div>
+          </div>
+          <hr class="divider">
+          <div class="creator-info-wrapper">
+            <div class="creator-profile-info">
+              <p class="index">3.</p>           
+              <div class="profile-image">
+                <img src="image/creator-3.png" alt="">
+              </div>
+              <div class="creator-reach">
+                <div>
+                  <h4><a href="#" class="creator-name">@Simonlee</a>
+                </div></h4>
+                <div>
+                  <p class="text-muted creator-followers">136 followers</p>
+                </div>
+              </div>
+            </div>
+            <div class="profile-cta-wrapper">
+              <button class="button profile-cta">Follow</button>
+            </div>
+          </div>
+        </div>
+        <div class="creator-card">
+          <div class="creator-info-wrapper">
+            <div class="creator-profile-info">
+              <p class="index">4.</p>           
+              <div class="profile-image">
+                <img src="image/creator-4.png" alt="">
+              </div>
+              <div class="creator-reach">
+                <div>
+                  <h4><a href="#" class="creator-name">@annet_creator</a>
+                </div></h4>
+                <div>
+                  <p class="text-muted creator-followers">83 followers</p>
+                </div>
+              </div>
+            </div>
+            <div class="profile-cta-wrapper">
+              <button class="button profile-cta">Follow</button>
+            </div>
+          </div>
+          <hr class="divider">
+          <div class="creator-info-wrapper">
+            <div class="creator-profile-info">
+              <p class="index">5.</p>           
+              <div class="profile-image">
+                <img src="image/creator-5.png" alt="">
+              </div>
+              <div class="creator-reach">
+                <div>
+                  <h4><a href="#" class="creator-name">@shubham_dhage</a>
+                </div></h4>
+                <div>
+                  <p class="text-muted creator-followers">105 followers</p>
+                </div>
+              </div>
+            </div>
+            <div class="profile-cta-wrapper">
+              <button class="button profile-cta">Follow</button>
+            </div>
+          </div>
+          <hr class="divider">
+          <div class="creator-info-wrapper">
+            <div class="creator-profile-info">
+              <p class="index">6.</p>           
+              <div class="profile-image">
+                <img src="image/creator-6.png" alt="">
+              </div>
+              <div class="creator-reach">
+                <div>
+                  <h4><a href="#" class="creator-name">@distrokid</a>
+                </div></h4>
+                <div>
+                  <p class="text-muted creator-followers">902 followers</p>
+                </div>
+              </div>
+            </div>
+            <div class="profile-cta-wrapper">
+              <button class="button profile-cta">Follow</button>
+            </div>
+          </div>
+        </div>
+        <div class="creator-card">
+          <div class="creator-info-wrapper">
+            <div class="creator-profile-info">
+              <p class="index">7.</p>           
+              <div class="profile-image">
+                <img src="image/creator-7.png" alt="">
+              </div>
+              <div class="creator-reach">
+                <div>
+                  <h4><a href="#" class="creator-name">@42Labs</a>
+                </div></h4>
+                <div>
+                  <p class="text-muted creator-followers">730 followers</p>
+                </div>
+              </div>
+            </div>
+            <div class="profile-cta-wrapper">
+              <button class="button profile-cta">Follow</button>
+            </div>
+          </div>
+          <hr class="divider">
+          <div class="creator-info-wrapper">
+            <div class="creator-profile-info">
+              <p class="index">8.</p>           
+              <div class="profile-image">
+                <img src="image/creator-8.png" alt="">
+              </div>
+              <div class="creator-reach">
+                <div>
+                  <h4><a href="#" class="creator-name">@ZeniconStudio</a>
+                </div></h4>
+                <div>
+                  <p class="text-muted creator-followers">299 followers</p>
+                </div>
+              </div>
+            </div>
+            <div class="profile-cta-wrapper">
+              <button class="button profile-cta">Follow</button>
+            </div>
+          </div>
+          <hr class="divider">
+          <div class="creator-info-wrapper">
+            <div class="creator-profile-info">
+              <p class="index">9.</p>           
+              <div class="profile-image">
+                <img src="image/creator-9.png" alt="">
+              </div>
+              <div class="creator-reach">
+                <div>
+                  <h4><a href="#" class="creator-name">@MihailGreen</a>
+                </div></h4>
+                <div>
+                  <p class="text-muted creator-followers">100 followers</p>
+                </div>
+              </div>
+            </div>
+            <div class="profile-cta-wrapper">
+              <button class="button profile-cta">Follow</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- creator card end -->
+
+  <!-- collection card start -->
+  <section class="collection-card-section">
+    <div class="container">
+      <div class="collection-card-section-head">
+        <h2 class="head collection-card-section-title">Recommended Collections</h2>
+        <a href="#" class="button button-outline">View all <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></a>
+      </div>
+      <div class="collection-card-wrapper">
+        <div class="collection-card">
+          <div class="collection-card-body">
+            <div class="nft-details">
+              <div class="nft-author-profile-pic">
+                <img class="nft-author-pic" src="image/author-1.png" alt="">
+              </div>
+              <div class="nft-author-name">
+                by <a href="#" class="nft-author-link">@Sharan_Pagadala</a>
+              </div>
+            </div>
+            <div class="nft-collection-wrapper">
+              <div class="nft-collection-left">
+                <img class="nft-image" src="image/collec-1.jpg" alt="">
+              </div>
+              <div class="nft-collection-right">
+                <div class="nft-collection-right-top">
+                  <img class="nft-image" src="image/collec-2.jpg" alt="">
+                </div>
+                <div class="nft-collection-right-bottom">
+                  <img class="nft-image" src="image/collec-3.jpg" alt="">
+                </div>
+              </div>
+            </div>            
+          </div>
+          <div class="nft-collection-desc">
+            <h3 class="nft-title"><a href="#" class="link link-nft-title">Contemporary art collage</a></h3>
+            <p class="text-muted">$ 12180.95</p>
+          </div>
+        </div>
+        <div class="collection-card">
+          <div class="collection-card-body">
+            <div class="nft-details">
+              <div class="nft-author-profile-pic">
+                <img class="nft-author-pic" src="image/author-2.png" alt="">
+              </div>
+              <div class="nft-author-name">
+                by <a href="#" class="nft-author-link">@Simonlee</a>
+              </div>
+            </div>
+            <div class="nft-collection-wrapper">
+              <div class="nft-collection-left">
+                <img class="nft-image" src="image/collec-4.jpg" alt="">
+              </div>
+              <div class="nft-collection-right">
+                <div class="nft-collection-right-top">
+                  <img class="nft-image" src="image/collec-5.jpg" alt="">
+                </div>
+                <div class="nft-collection-right-bottom">
+                  <img class="nft-image" src="image/collec-6.jpg" alt="">
+                </div>
+              </div>
+            </div>            
+          </div>
+          <div class="nft-collection-desc">
+            <h3 class="nft-title"><a href="#" class="link link-nft-title">3D digital abstract art</a></h3>
+            <p class="text-muted">$ 9020.34</p>
+          </div>
+        </div>
+        <div class="collection-card">
+          <div class="collection-card-body">
+            <div class="nft-details">
+              <div class="nft-author-profile-pic">
+                <img class="nft-author-pic" src="image/author-3.png" alt="">
+              </div>
+              <div class="nft-author-name">
+                by <a href="#" class="nft-author-link">@Annet_creator</a>
+              </div>
+            </div>
+            <div class="nft-collection-wrapper">
+              <div class="nft-collection-left">
+                <img class="nft-image" src="image/collec-7.jpg" alt="">
+              </div>
+              <div class="nft-collection-right">
+                <div class="nft-collection-right-top">
+                  <img class="nft-image" src="image/collec-8.jpg" alt="">
+                </div>
+                <div class="nft-collection-right-bottom">
+                  <img class="nft-image" src="image/collec-9.jpg" alt="">
+                </div>
+              </div>
+            </div>            
+          </div>
+          <div class="nft-collection-desc">
+            <h3 class="nft-title"><a href="#" class="link link-nft-title">Clone X Mini Monsters</a></h3>
+            <p class="text-muted">$ 1520.18</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- collection card end -->
+
+  <!-- banner section start -->
+  <section class="banner-saction">
+    <div class="container">
+      <div class="banner-wrapper">
+        <div class="banner-content">
+          <div class="banner-left">
+            <h3 class="head banner-title"><span class="text-accent">Best App</span> for NFT Enthusiasts
+            </h3>
+            <p class="banner-desc">If you're an NFT enthusiast, or are looking to get more familiar with NFTs, consider downloading our NFT App!</p>
+            <div class="banner-cta-wrapper">           
+              <div class="button-apple">
+                <img class="apple-button-image" src="image/btn-apple-1.png" alt="">
+              </div>
+              <div class="button-play-store">
+                <img class="play-button-image" src="image/btn-play-1.png" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="banner-right">
+            <svg width="248" height="284" viewBox="0 0 248 284" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect x="4" y="4" width="240" height="417" rx="24" fill="#2B3445" stroke="#DAE1E7" stroke-width="8"/>
+            <rect x="44" y="52" width="160" height="160" rx="7" fill="white"/>
+            <rect x="60" y="68" width="128" height="128" fill="url(#pattern0)"/><defs><pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#image0_276_6379" transform="scale(0.0037037)"/></pattern>
+            <image id="image0_276_6379" width="270" height="270" xlink:href="data:image/png;base64,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"/>
+            </defs></svg>            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- banner section end -->
+
+  <!-- info card start -->
+  <section class="info-card-section">
+    <div class="container">
+      <div class="info-card-section-head">
+        <h2 class="head info-card-section-title">Begin your NFT journey with us!</h2>
+      </div>
+      <div class="info-card-wrapper">
+        <div class="info-card">
+          <img class="info-svg" src="image/wallet.svg" alt="">
+          <h4 class="info-card-title">Set up your wallet</h4>
+          <p class="info-card-desc">Quam nulla in id nibh. Morbi eget elit eget dui est pretium, blandit penatibus blandit. Amet mattis blandit urna volutpat.</p>
+        </div>
+        <div class="info-card">
+          <img class="info-svg" src="image/add.svg" alt="">
+          <h4 class="info-card-title">Create your collection</h4>
+          <p class="info-card-desc">Quam nulla in id nibh. Morbi eget elit eget dui est pretium, blandit penatibus blandit. Amet mattis blandit urna volutpat.</p>
+        </div>
+        <div class="info-card">
+          <img class="info-svg" src="image/image.svg" alt="">
+          <h4 class="info-card-title">Add your NFTs</h4>
+          <p class="info-card-desc">Platea eu aliquam pellentesque parturient. Volutpat, fermentum suspendisse at nisi cras mattis augue.</p>
+        </div>
+        <div class="info-card">
+          <img class="info-svg" src="image/shopping-cart.svg" alt="">
+          <h4 class="info-card-title">List them for sale</h4>
+          <p class="info-card-desc">In eget nulla id feugiat ut placerat sapien malesuada. Sed id risus non accumsan eu amet ut pellentesque.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- info card end -->
+
+  <!-- resource card start  -->
+  <section class="resource-card-section">
+    <div class="container">
+      <div class="resource-card-section-head">
+        <h2 class="head resource-card-section-title">Resources for getting started</h2>
+        <a href="#" class="button button-outline">All articles <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg></a>
+      </div>
+      <div class="resource-card-wrapper">
+        <div class="resource-card">
+          <div class="resource-card-image-wrapper">
+            <img class="resource-card-image" src="image/resource-img-1.jpg" alt="">
+          </div>
+          <div class="image-info">
+            <a href="#" class="author-name">by Wade Warren</a>
+            <p class="vertical-divider">|</p>
+            <a href="#" class="publish-time">Aug 15</a>
+          </div>
+          <div class="resource-card-desc">
+            <h2><a href="#" class="title resource-card-desc-link">The complete guide to NFTs art for creators and investors</a></h2>
+          </div>
+        </div>
+        <div class="resource-card">
+          <div class="resource-card-image-wrapper">
+            <img class="resource-card-image" src="image/resource-img-2.jpg" alt="">
+          </div>
+          <div class="image-info">
+            <a href="#" class="author-name">by Kathryn Murphy</a>
+            <p class="vertical-divider">|</p>
+            <a href="#" class="publish-time">Sep 18</a>
+          </div>
+          <div class="resource-card-desc">
+            <h2><a href="#" class="title resource-card-desc-link">A chance to win a variety of common, rare and unique NFTs</a></h2>
+          </div>
+        </div>
+        <div class="resource-card">
+          <div class="resource-card-image-wrapper">
+            <img class="resource-card-image" src="image/resource-img-3.jpg" alt="">
+          </div>
+          <div class="image-info">
+            <a href="#" class="author-name">by Devon Lane</a>
+            <p class="vertical-divider">|</p>
+            <a href="#" class="publish-time">Nov 26</a>
+          </div>
+          <div class="resource-card-desc">
+            <h2><a href="#" class="title resource-card-desc-link">Exclusive premium events, from exhibitions to unique collectibles</a></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- resource card end  -->
+
+  <!-- subscribe section start -->
+  <section class="container subscribe-section">
+      <div class="subscribe-section-wrapper">
+        <h3 class="head subscribe-section-title">Never miss a drop!</h3>
+        <p class="subscribe-section-desc">Subscribe to our ultra-exclusive drop list and be the first to know about upcoming drops.</p> 
+        <div class="info-input-field">
+          <input placeholder="Your email" type="email" class="email-input-field">
+          <button class="button button-accent">Subscribe*</button>
+        </div>
+        <p class="text-subscribe">*Receive early discount offers, updates and new products info.</p>
+      </div>
+  </section>
+  <!-- subscribe section end -->
+
+  <!-- footer section start -->
+  <footer class="footer-section">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div class="footer-left">
+          <h3 class="widget-title info">Stay informed</h3>
+          <div class="info-input-field">
+            <input placeholder="Your email" type="email" class="email-input-field">
+            <button class="button button-accent">Subscribe*</button>
+          </div>
+          <div class="subscribe-note">
+            <p class="text-to-subscribe">*Subscribe to our newsletter to receive early discount offers, updates and new products info.</p>
+          </div>
+          <div class="social-links">
+            <a href="#" class="button-social twitter"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="social svg-twitter" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg></a>
+            <a href="#" class="button-social facebook"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="social svg-facebook" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg></a>
+            <a href="#" class="button-social instagram"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="social svg-instagram" viewBox="0 0 16 16">
+            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg></a>
+            <a href="#" class="button-social pinterest"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="social svg-pinterest" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 0 0-2.915 15.452c-.07-.633-.134-1.606.027-2.297.146-.625.938-3.977.938-3.977s-.239-.479-.239-1.187c0-1.113.645-1.943 1.448-1.943.682 0 1.012.512 1.012 1.127 0 .686-.437 1.712-.663 2.663-.188.796.4 1.446 1.185 1.446 1.422 0 2.515-1.5 2.515-3.664 0-1.915-1.377-3.254-3.342-3.254-2.276 0-3.612 1.707-3.612 3.471 0 .688.265 1.425.595 1.826a.24.24 0 0 1 .056.23c-.061.252-.196.796-.222.907-.035.146-.116.177-.268.107-1-.465-1.624-1.926-1.624-3.1 0-2.523 1.834-4.84 5.286-4.84 2.775 0 4.932 1.977 4.932 4.62 0 2.757-1.739 4.976-4.151 4.976-.811 0-1.573-.421-1.834-.919l-.498 1.902c-.181.695-.669 1.566-.995 2.097A8 8 0 1 0 8 0z"/></svg></a>
+            <a href="#" class="button-social youtube"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="social svg-youtube" viewBox="0 0 16 16">
+            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-right">
+          <div class="col company-widget">
+            <h3 class="widget-title company">Company</h3>
+            <ul class="widget-list">
+              <li class="widget-list-item">
+                <a href="#" class="widget-list-link">About us</a>
+              </li>
+              <li class="widget-list-item">
+                <a href="#" class="widget-list-link">How It Works</a>
+              </li>
+              <li class="widget-list-item">
+                <a href="#" class="widget-list-link">Create an NFT With Us</a>
+              </li>
+              <li class="widget-list-item">
+                <a href="#" class="widget-list-link">Support</a>
+              </li>
+              <li class="widget-list-item"
+              ><a href="#" class="widget-list-link">Blog</a>
+            </li>
+              <li class="widget-list-item">
+                <a href="#" class="widget-list-link">My Account</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col company-widget">
+            <h3 class="widget-title company">Marketplace</h3>
+            <ul class="widget-list">
+              <li class="widget-list-item">
+                <a href="#" class="widget-list-link">All NFTs</a>
+              </li>
+              <li class="widget-list-item">
+                <a href="#" class="widget-list-link">New</a>
+              </li>
+              <li class="widget-list-item">
+                <a href="#" class="widget-list-link">Art</a>
+              </li>
+              <li class="widget-list-item">
+                <a href="#" class="widget-list-link">Music</a>
+              </li>
+              <li class="widget-list-item">
+                <a href="#" class="widget-list-link">Photography</a>
+              </li>
+              <li class="widget-list-item">
+                <a href="#" class="widget-list-link">Utility</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col company-widget">
+            <h3 class="widget-title company">Help</h3>
+            <ul class="widget-list">
+              <li class="widget-list-item">
+                <a href="#" class="widget-list-link">Terms and Conditions</a>
+              </li>
+              <li class="widget-list-item">
+                <a href="#" class="widget-list-link">Privacy Policy</a>
+              </li>
+              <li class="widget-list-item">
+                <a href="#" class="widget-list-link">FAQ</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+</body>
+</html>
